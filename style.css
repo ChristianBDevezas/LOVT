@@ -12,6 +12,10 @@ body {
     padding: 25px 50px;
 }
 
+img {
+    object-fit:cover;
+}
+
 /**HEADER**/
 header {
     height: 50px;
@@ -271,6 +275,10 @@ footer {
 }
 
 @media(max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
     nav.desktop-nav {
         display: none;
     }
@@ -278,9 +286,7 @@ footer {
     .banner, .products, .styles {
         padding: 15px calc(20px + 1vw);
     }
-}
 
-@media(max-width: 600px) {
     .banner_image img {
         min-height: calc(180px + 1vw);
     }
@@ -291,6 +297,10 @@ footer {
 
     .products__item {
         flex-basis: 100%;
+    }
+
+    .products__item__image img {
+        max-height: calc(220px + 1vw);
     }
 
     .styles__item__image img {
@@ -315,6 +325,10 @@ footer {
 @media(max-width: 400px) {
     .banner_image img {
         min-height: calc(130px + 1vw);
+    }
+
+    .products__item__image img {
+        max-height: calc(130px + 1vw);
     }
 
     .footer__map {
